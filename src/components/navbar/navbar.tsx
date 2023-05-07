@@ -20,7 +20,7 @@ export const NavBar = () => {
             </button>
           </div>
           <div className={style.serch}>
-            <form  className={style.sub} action="" method="get">
+            <form className={style.sub} action="" method="get">
               <input name="s" placeholder="Поиск по товарам" type="search" />
               <button type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -28,9 +28,15 @@ export const NavBar = () => {
             </form>
           </div>
         </div>
-        <div>
-          <FontAwesomeIcon icon={faUser} />
-          <FontAwesomeIcon icon={faCartPlus} />
+        <div className={style.nav}>
+          <a className={style.sign}>
+            <FontAwesomeIcon icon={faUser} />
+            <span>Войти</span>
+          </a>
+          <a className={style.sign}>
+            <FontAwesomeIcon icon={faCartPlus} />
+            <span>Корзина</span>
+          </a>
         </div>
       </div>
     </div>
