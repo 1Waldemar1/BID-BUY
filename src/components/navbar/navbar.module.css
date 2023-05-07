@@ -1,0 +1,69 @@
+.contant {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.btnserch {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    margin-right: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    width: 170px;
+    height: 40px;
+    background-color: #ffff;
+    color: #2D2D2D;
+    border-radius: 10px;
+    border: 1px solid #2D2D2D;
+}
+
+.btn button:hover {
+    color: #ffff;
+    background-color: #31394D;
+}
+
+.menu {
+    margin-right: 7px;
+}
+
+
+
+* {box-sizing: border-box;}
+form {
+  position: relative;
+  width: 600px;
+  margin: 0 auto;
+  background: #ffff;
+  border-bottom: 1px solid #2D2D2D;
+}
+.sub button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+.sub button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

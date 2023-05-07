@@ -1,5 +1,6 @@
 import { render } from "react-dom";
 import {
+  faBars,
   faCartPlus,
   faMagnifyingGlass,
   faUser,
@@ -13,11 +14,14 @@ export const NavBar = () => {
       <div className={style.contant}>
         <div className={style.btnserch}>
           <div className={style.btn}>
-            <button></button>
+            <button>
+              <FontAwesomeIcon icon={faBars} className={style.menu} />
+              Каталог товаров
+            </button>
           </div>
           <div className={style.serch}>
-            <form action="" method="get">
-              <input name="s" placeholder="Искать здесь..." type="search" />
+            <form  className={style.sub} action="" method="get">
+              <input name="s" placeholder="Поиск по товарам" type="search" />
               <button type="submit">
                 <FontAwesomeIcon icon={faMagnifyingGlass} />
               </button>
