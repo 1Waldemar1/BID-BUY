@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./home-products.module.css";
 
 export const HomeProducts = () => {
-  const [users, setUsers] = useState([
+  const [products, setProducts] = useState([
     {
       id: 1,
       image:
@@ -39,21 +39,21 @@ export const HomeProducts = () => {
       price: 12990,
     },
     {
-      id: 5,
+      id: 6,
       image:
         "https://cdn.citilink.ru/_-7uaCcsJcXVfh7JYZPqUpfWOLnhGajEF70NQ0Gkx_4/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1804652_v01_b.jpg",
       name: "Смартфон OPPO A96 6/128Gb, черный",
       price: 16990,
     },
     {
-      id: 6,
+      id: 7,
       image:
         "https://cdn.citilink.ru/G2SbWZZbasNvInlrdEsyhEjGWai65zvoksH8Bb12cRc/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1628173_v01_b.jpg",
       name: "Смартфон REALME C25s 4/64Gb, серый",
       price: 8990,
     },
     {
-      id: 7,
+      id: 8,
       image:
         "https://cdn.citilink.ru/KqL3YroNV7LK9ROi_eWfd1EzR0l93yN7dN1F5CEy9u4/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1517181_v01_b.jpg",
       name: "Смартфон REALME 8 6/128Gb, черный",
@@ -66,16 +66,22 @@ export const HomeProducts = () => {
       <div className={style.title}>
         <h2>Товары</h2>
       </div>
-      {users.map((user) => (
-        <div className={style.product} key={user.id}>
+      {products.map((product) => (
+        <div className={style.product} key={product.id}>
           <a className={style.card}>
             <div className={style.info}>
               <div className={style.photo}>
-                <img src={user.image} alt="" />
+                <img src={product.image} alt="" />
               </div>
-              <div className={style.name}>{user.name}</div>
+              <div className={style.name}>{product.name}</div>
             </div>
-            <div className={style.price}>{user.price} ₽</div>
+            <div className={style.price}>
+              {product.price.toLocaleString("ru-RU", {
+                currency: "RUB",
+                style: "currency",
+                maximumFractionDigits: 0,
+              })}
+            </div>
           </a>
         </div>
       ))}
