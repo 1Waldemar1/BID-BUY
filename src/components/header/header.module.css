@@ -13,6 +13,8 @@
 
 .color {
   color: white;
+  text-decoration: none;
+  margin-left: 15px;
 }
 
 .color:hover {
@@ -22,12 +24,12 @@
 .navbar {
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .link {
   display: flex;
   align-items: center;
-
 }
 
 .num {

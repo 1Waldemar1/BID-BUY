@@ -1,4 +1,3 @@
-import { render } from "react-dom";
 import {
   faBars,
   faCartPlus,
@@ -7,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./navbar.module.css";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -29,18 +29,16 @@ export const NavBar = () => {
           </div>
         </div>
         <div className={style.nav}>
-          <a className={style.sign}>
+          <Link className={style.sign} to={"/signin"}>
             <FontAwesomeIcon icon={faUser} />
             <span>Войти</span>
-          </a>
-          <a className={style.sign}>
+          </Link>
+          <Link className={style.sign} to={"/"}>
             <FontAwesomeIcon icon={faCartPlus} />
             <span>Корзина</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
-
-render(<NavBar />, document.getElementById("root"));

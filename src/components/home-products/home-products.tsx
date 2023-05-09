@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./home-products.module.css";
+import { Link } from "react-router-dom";
 
 export const HomeProducts = () => {
   const [products, setProducts] = useState([
@@ -68,7 +69,7 @@ export const HomeProducts = () => {
       </div>
       {products.map((product) => (
         <div className={style.product} key={product.id}>
-          <a className={style.card}>
+          <Link className={style.card} to={"/"}>
             <div className={style.info}>
               <div className={style.photo}>
                 <img src={product.image} alt="" />
@@ -82,7 +83,7 @@ export const HomeProducts = () => {
                 maximumFractionDigits: 0,
               })}
             </div>
-          </a>
+          </Link>
         </div>
       ))}
     </div>
