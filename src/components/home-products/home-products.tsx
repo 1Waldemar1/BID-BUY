@@ -1,6 +1,7 @@
 import { useState } from "react";
 import style from "./home-products.module.css";
 import { Link } from "react-router-dom";
+import { Messenger } from "../messenger/messenger";
 
 export const HomeProducts = () => {
   const [products, setProducts] = useState([
@@ -60,6 +61,20 @@ export const HomeProducts = () => {
       name: "Смартфон REALME 8 6/128Gb, черный",
       price: 19990,
     },
+    {
+      id: 9,
+      image:
+        "https://cdn.citilink.ru/mKAdnNBmMhK-AEdGzdiCn7qDEV02FVAz9L2NtzUiovE/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1769826_v01_b.jpg",
+      name: "Смартфон Huawei nova Y70 4/128Gb, черный",
+      price: 13490,
+    },
+    {
+      id: 10,
+      image:
+        "https://cdn.citilink.ru/SkRbJchmSpRvjUr3IxgdAVoT1mhFJkVDeTEtglfeCAk/resizing_type:fit/gravity:sm/width:1200/height:1200/plain/items/1889453_v01_b.jpg",
+      name: "Смартфон Apple iPhone 14 128Gb, A2884, темная ночь",
+      price: 79790,
+    },
   ]);
 
   return (
@@ -67,6 +82,7 @@ export const HomeProducts = () => {
       <div className={style.title}>
         <h2>Товары</h2>
       </div>
+      <Messenger />
       {products.map((product) => (
         <div className={style.product} key={product.id}>
           <Link className={style.card} to={"/"}>

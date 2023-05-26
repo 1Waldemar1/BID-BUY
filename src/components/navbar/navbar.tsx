@@ -18,6 +18,9 @@ export const NavBar = () => {
               <FontAwesomeIcon icon={faBars} className={style.menu} />
               Каталог товаров
             </button>
+            <Link to={"/auction"} className={style.auction}>
+              Аукцион
+            </Link>
           </div>
           <div className={style.serch}>
             <form className={style.sub} action="" method="get">
@@ -42,3 +45,38 @@ export const NavBar = () => {
     </div>
   );
 };
+
+{
+  /* <ul>
+  <li>
+    <a href="">Бытовая техника</a>
+  </li>
+  <li>
+    <a href="">Смартфоны</a>
+  </li>
+  <li>
+    <a href="">Смартфоны</a>
+  </li>
+  <li>
+    <a href="">Фототехника</a>
+  </li>
+  <li>
+    <a href="">ТВ</a>
+  </li>
+  <li>
+    <a href="">Консоли</a>
+  </li>
+  <li>
+    <a href="">Пк</a>
+  </li>
+  <li>
+    <a href="">Ноутбуки</a>
+  </li>
+  <li>
+    <a href="">Периферия</a>
+  </li>
+  <li>
+    <a href="">Сетевое оборудование</a>
+  </li>
+</ul> */
+}
