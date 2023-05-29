@@ -1,6 +1,7 @@
 import {
   faBars,
   faCartPlus,
+  faCoins,
   faMagnifyingGlass,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,33 +13,42 @@ export const NavBar = () => {
   return (
     <div className={style.contener}>
       <div className={style.contant}>
-        <div className={style.btnserch}>
-          <div className={style.btn}>
-            <button>
-              <FontAwesomeIcon icon={faBars} className={style.menu} />
+        <div className={style.serch__btns}>
+          <div className={style.catalogy}>
+            <button className={style.menu}>
+              <FontAwesomeIcon className={style.icon} icon={faBars} />
               Каталог товаров
             </button>
-            <Link to={"/auction"} className={style.auction}>
-              Аукцион
-            </Link>
           </div>
           <div className={style.serch}>
             <form className={style.sub} action="" method="get">
-              <input name="s" placeholder="Поиск по товарам" type="search" />
-              <button type="submit">
-                <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <input
+                className={style.inp}
+                name="s"
+                placeholder="Поиск по товарам"
+                type="search"
+              />
+              <button className={style.btn__serch} type="submit">
+                <FontAwesomeIcon
+                  className={style.serch__icon}
+                  icon={faMagnifyingGlass}
+                />
               </button>
             </form>
           </div>
         </div>
         <div className={style.nav}>
-          <Link className={style.sign} to={"/signin"}>
-            <FontAwesomeIcon icon={faUser} />
-            <span>Войти</span>
+          <Link to={"auction"} className={style.item}>
+            <FontAwesomeIcon icon={faCoins} />
+            <span className={style.title}>Аукцион</span>
           </Link>
-          <Link className={style.sign} to={"/"}>
+          <Link className={style.item} to={"signin"}>
+            <FontAwesomeIcon icon={faUser} />
+            <span className={style.title}>Войти</span>
+          </Link>
+          <Link className={style.item} to={"/"}>
             <FontAwesomeIcon icon={faCartPlus} />
-            <span>Корзина</span>
+            <span className={style.title}>Корзина</span>
           </Link>
         </div>
       </div>

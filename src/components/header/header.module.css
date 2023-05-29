@@ -1,11 +1,11 @@
 .contener {
   background-color: rgb(49, 57, 77);
-  display: block;
 }
 
 .content {
-  margin: 0 100px 0 60px;
-  padding: 15px 0 25px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 15px 60px 25px 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,6 +42,29 @@
   justify-content: flex-start;
 }
 
-img {
+.image {
+  margin-left: -80px;
+}
+
+.image img {
   width: 300px;
+}
+
+@media (max-width: 1200px) {
+  .num {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .content {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    margin-left: 0px;
+  }
 }

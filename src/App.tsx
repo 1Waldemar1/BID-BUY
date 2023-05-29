@@ -1,4 +1,4 @@
-import "./App.css";
+import style from "./app.module.css";
 import { NavBar } from "./components/navbar/navbar";
 import { Header } from "./components/header/header";
 import { HomeProducts } from "./components/home-products/home-products";
@@ -12,13 +12,13 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="App">
+      <div className={style.app}>
         <NavBar />
         <Routes>
           <Route path="/" element={<HomeProducts />} />
-          <Route path="/auction" element={<Auction />} />
-          <Route path="/signin" element={<SigIn />} />
-          <Route path="/signup" element={<SigUp />} />
+          <Route path="auction" element={<Auction />} />
+          <Route path="signin" element={<SigIn />} />
+          <Route path="signup" element={<SigUp />} />
         </Routes>
       </div>
       <Footer />

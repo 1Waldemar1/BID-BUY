@@ -7,7 +7,7 @@ export const Header = () => {
     <div className={style.contener}>
       <div className={style.content}>
         <div className={style.link}>
-          <Link to={"/"}>
+          <Link to={"/"} className={style.image}>
             <img src={logo} alt="" />
           </Link>
           <div className={style.num}>Москва +7 (965) 219-24-67</div>
