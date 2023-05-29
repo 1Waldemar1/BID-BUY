@@ -98,14 +98,44 @@
   border-radius: 12px;
 }
 
-.inp {
+.input {
+  display: flex;
+  border: none;
   margin-top: 70px;
   border-top: 1px solid #bbbbbb;
+  max-width: 400px;
 }
 
-.inp input {
-  padding-top: 5px;
+.inp {
+  display: flex;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  background: #ffff;
   font-size: 15px;
+  width: 100%;
+}
+
+.inp[type="search"]::-webkit-search-cancel-button {
+  margin-left: 15px;
+  margin-top: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/close.svg);
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+
+.submit {
+  margin-top: 20px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+
 }
 
 @media (max-width: 1200px) {

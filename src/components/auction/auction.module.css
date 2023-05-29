@@ -145,7 +145,7 @@
 .cont {
   display: flex;
   flex-direction: column;
-  max-height: 820px;
+  max-height: 800px;
   padding: 0 15px;
   margin-bottom: 20px;
   border-radius: 12px;
