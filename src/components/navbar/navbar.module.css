@@ -133,7 +133,7 @@ a {
   font-size: 15px;
 }
 
-/* @media (max-width: 1345px) {
+@media (max-width: 1345px) {
   .sub input {
     width: 470px;
   }
@@ -141,10 +141,10 @@ a {
   .sub {
     width: 470px;
   }
-} */
+}
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
   .contant {
     display: none;
   }
-} */
+}

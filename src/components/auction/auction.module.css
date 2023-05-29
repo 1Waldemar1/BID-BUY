@@ -8,11 +8,14 @@
 }
 
 .contant {
-  margin-top: 100px;
+  display: flex;
+  margin-top: 40px;
 }
 
 .title {
-  margin-bottom: 50px;
+  display: flex;
+  margin-top: 80px;
+  flex-direction: column;
 }
 
 .photo {
@@ -142,7 +145,7 @@
 .cont {
   display: flex;
   flex-direction: column;
-  max-height: 800px;
+  max-height: 820px;
   padding: 0 15px;
   margin-bottom: 20px;
   border-radius: 12px;
@@ -175,21 +178,71 @@
 }
 
 .check {
-  display: flex;
-  align-items: center;
-  margin-bottom: -12px;
+  position: relative;
+  margin: 1rem 0 1rem 0.5rem;
 }
 
-.check input {
-  width: 17px;
+.check:last-child {
+  margin: 1rem 0 0 0.5rem;
 }
 
-.check label {
-  margin-bottom: 3px;
-  margin-left: 8px;
-  font-size: 14px;
-  color: rgb(51, 51, 51);
+.checkbox__input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox__label {
+  padding-left: 25px;
+
+  font-size: 1rem;
+  color: #444;
   cursor: pointer;
+}
+
+.checkbox__label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 3px;
+
+  position: absolute;
+  top: 2px;
+  left: 0;
+  z-index: 1;
+
+  transition: background .1s linear, border .1s linear;
+}
+
+.checkbox__label:after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+
+  background: url("../../assets/check.svg") no-repeat;
+  background-size: 12px 12px;
+  opacity: 0;
+
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  z-index: 2;
+
+  transition: opacity .1s linear;
+}
+
+.checkbox__input:checked+.checkbox__label:before {
+  background-color: #ffb217;
+  border-color: #e79a00;
+}
+
+.checkbox__input:checked+.checkbox__label:after {
+  opacity: 1;
 }
 
 .titlecategory {
