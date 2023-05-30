@@ -23,6 +23,7 @@
   box-shadow:
     0 0 8px #202046,
     0 0 10px #353f75;
+  z-index: 1;
 }
 
 .list {

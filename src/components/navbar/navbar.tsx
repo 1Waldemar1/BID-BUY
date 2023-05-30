@@ -7,7 +7,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import style from "./navbar.module.css";
-import { Link } from "react-router-dom";
+import "../../NavLink.css"
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -38,18 +39,18 @@ export const NavBar = () => {
           </div>
         </div>
         <div className={style.nav}>
-          <Link to={"auction"} className={style.item}>
+          <NavLink className={style.item} to={"auction"}>
             <FontAwesomeIcon icon={faCoins} />
             <span className={style.title}>Аукцион</span>
-          </Link>
-          <Link className={style.item} to={"signin"}>
+          </NavLink>
+          <NavLink className={style.item} to={"signin"}>
             <FontAwesomeIcon icon={faUser} />
             <span className={style.title}>Войти</span>
-          </Link>
-          <Link className={style.item} to={"/"}>
+          </NavLink>
+          <NavLink className={style.item} to={"/"}>
             <FontAwesomeIcon icon={faCartPlus} />
             <span className={style.title}>Корзина</span>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>

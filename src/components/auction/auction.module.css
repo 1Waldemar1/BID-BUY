@@ -15,16 +15,18 @@
 .title {
   display: flex;
   margin-top: 80px;
+  margin-left: 4px;
   flex-direction: column;
 }
 
 .photo {
+  display: flex;
   padding-left: 15px;
 }
 
 .photo img {
-  width: 180px;
-  height: 210px;
+ max-width: 180px;
+  max-height: 210px;
 }
 
 .info {
@@ -34,7 +36,7 @@
 .product {
   display: flex;
   flex-direction: column;
-  width: 850px;
+  max-width: 850px;
   border: 1px solid #ffff;
   align-items: center;
   text-align: left;
@@ -67,7 +69,7 @@
 .name {
   font-size: 20.5px;
   font-weight: 600;
-  height: 95px;
+  max-height: 95px;
 }
 
 .price {
@@ -77,13 +79,16 @@
 }
 
 .discrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: 30px;
   font-size: 15px;
 }
 
 .detail {
-  margin-top: 10px;
-  height: 70px;
+  margin-bottom: 35px;
+  max-height: 70px;
 }
 
 .auction {
@@ -145,15 +150,17 @@
 .cont {
   display: flex;
   flex-direction: column;
-  max-height: 800px;
+  max-height: 730px;
+  max-width: 350px;
+  height: 100%;
+  width: 100%;
   padding: 0 15px;
   margin-bottom: 20px;
+  margin-left: 4px;
   border-radius: 12px;
   box-shadow:
     0 0 6px #bbbbbb,
     0 0 8px #dddddd;
-  position: sticky;
-  top: 20px;
 }
 
 .cont h3 {
@@ -163,17 +170,19 @@
 
 .inp {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .inp input {
+  display: flex;
   margin-right: 20px;
   margin-top: 15px;
   background: #fff;
   border: 1px solid #d9d9d9;
   border-radius: 8px;
   font-size: 14px;
+  max-width: 200px;
+  min-width: 90px;
+  width: 100%;
   height: 40px;
 }
 
@@ -253,5 +262,5 @@
 }
 
 .titlecategory:first-child {
-  margin-top: 20px;
+  margin-top: 10px;
 }
