@@ -2,6 +2,8 @@ import { useState } from "react";
 import style from "./home-products.module.css";
 import { Link } from "react-router-dom";
 import { Messenger } from "../messenger/messenger";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 
 export const HomeProducts = () => {
   const [products, setProducts] = useState([
@@ -78,30 +80,39 @@ export const HomeProducts = () => {
   ]);
 
   return (
-    <div className={style.contant}>
-      <div className={style.title}>
-        <h2>Товары</h2>
-      </div>
-      <Messenger />
-      {products.map((product) => (
-        <div className={style.product} key={product.id}>
-          <Link className={style.card} to={"/"}>
-            <div className={style.info}>
-              <div className={style.photo}>
-                <img src={product.image} alt="" />
-              </div>
-              <div className={style.name}>{product.name}</div>
-            </div>
-            <div className={style.price}>
-              {product.price.toLocaleString("ru-RU", {
-                currency: "RUB",
-                style: "currency",
-                maximumFractionDigits: 0,
-              })}
-            </div>
-          </Link>
+    <div>
+      <div className={style.wrapper}>
+        <div className={style.title}>
+          <h2>Товары</h2>
         </div>
-      ))}
+        <Messenger />
+        <div className={style.contant}>
+          {products.map((product) => (
+            <div className={style.product} key={product.id}>
+              <Link className={style.card} to={"/"}>
+                <div className={style.info}>
+                  <div className={style.photo}>
+                    <img src={product.image} alt="" />
+                  </div>
+                  <div className={style.name}>{product.name}</div>
+                </div>
+                <div className={style.catalog}>
+                  <div className={style.price}>
+                    {product.price.toLocaleString("ru-RU", {
+                      currency: "RUB",
+                      style: "currency",
+                      maximumFractionDigits: 0,
+                    })}
+                  </div>
+                  <button className={style.card_add}>
+                    <FontAwesomeIcon className={style.icon} icon={faCartPlus} />
+                  </button>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
