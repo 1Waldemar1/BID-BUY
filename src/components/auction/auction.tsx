@@ -95,145 +95,160 @@ export const Auction = () => {
       <div className={style.contant}>
         <Messenger />
         <div className={style.full}>
-          <div className={style.cont}>
-            <h3>Категории</h3>
-            <div>
-              <div className={style.titlecategory}>Цена</div>
-              <div className={style.inp}>
-                <input type="number" placeholder="от 0" />
-                <input type="number" placeholder="до 1000000" />
+          <div className={style.wrapper}>
+            <div className={style.sidebar}>
+              <h3>Категории</h3>
+              <div>
+                <div className={style.titlecategory}>Цена</div>
+                <div className={style.inp}>
+                  <input type="number" placeholder="от 0" />
+                  <input type="number" placeholder="до 1000000" />
+                </div>
               </div>
-            </div>
-            <div className={style.category}>
-              <div className={style.titlecategory}>Смартфоны и фототехника</div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_1"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_1">
-                  Планшеты
-                </label>
+              <div className={style.category}>
+                <div className={style.titlecategory}>
+                  Смартфоны и фототехника
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_1"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_1">
+                    Планшеты
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_2"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_2">
+                    Смартфоны и гаджеты
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_3"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_3">
+                    Фототехника
+                  </label>
+                </div>
               </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_2"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_2">
-                  Смартфоны и гаджеты
-                </label>
+              <div className={style.category}>
+                <div className={style.titlecategory}>
+                  ПК, ноутбуки, переферия
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_4"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_4">
+                    Компьютеры и ПО
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_5"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_5">
+                    Ноутбуки и аксессуары
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_6"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_6">
+                    Переферия и аксессуары
+                  </label>
+                </div>
               </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_3"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_3">
-                  Фототехника
-                </label>
+              <div className={style.category}>
+                <div className={style.titlecategory}>ТВ, консоли и аудио</div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_7"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_7">
+                    Аудеотехника
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_8"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_8">
+                    Консоли
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_9"
+                  />
+                  <label className={style.checkbox__label} htmlFor="checkbox_9">
+                    Телевизоры и аксессуары
+                  </label>
+                </div>
               </div>
-            </div>
-            <div className={style.category}>
-              <div className={style.titlecategory}>ПК, ноутбуки, переферия</div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_4"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_4">
-                  Компьютеры и ПО
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_5"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_5">
-                  Ноутбуки и аксессуары
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_6"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_6">
-                  Переферия и аксессуары
-                </label>
-              </div>
-            </div>
-            <div className={style.category}>
-              <div className={style.titlecategory}>ТВ, консоли и аудио</div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_7"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_7">
-                  Аудеотехника
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_8"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_8">
-                  Консоли
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_9"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_9">
-                  Телевизоры и аксессуары
-                </label>
-              </div>
-            </div>
-            <div className={style.category}>
-              <div className={style.titlecategory}>Бытовая техника</div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_10"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_10">
-                  Встраимовая техника
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_11"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_11">
-                  Техника для дома
-                </label>
-              </div>
-              <div className={style.check}>
-                <input
-                  className={style.checkbox__input}
-                  type="checkbox"
-                  id="checkbox_12"
-                />
-                <label className={style.checkbox__label} htmlFor="checkbox_12">
-                  Техника для кухни
-                </label>
+              <div className={style.category}>
+                <div className={style.titlecategory}>Бытовая техника</div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_10"
+                  />
+                  <label
+                    className={style.checkbox__label}
+                    htmlFor="checkbox_10"
+                  >
+                    Встраимовая техника
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_11"
+                  />
+                  <label
+                    className={style.checkbox__label}
+                    htmlFor="checkbox_11"
+                  >
+                    Техника для дома
+                  </label>
+                </div>
+                <div className={style.check}>
+                  <input
+                    className={style.checkbox__input}
+                    type="checkbox"
+                    id="checkbox_12"
+                  />
+                  <label
+                    className={style.checkbox__label}
+                    htmlFor="checkbox_12"
+                  >
+                    Техника для кухни
+                  </label>
+                </div>
               </div>
             </div>
           </div>

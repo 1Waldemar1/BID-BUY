@@ -147,23 +147,22 @@
   display: flex;
 }
 
-.cont {
+.sidebar {
   display: flex;
   flex-direction: column;
-  max-height: 730px;
   max-width: 350px;
-  height: 100%;
-  width: 100%;
-  padding: 0 15px;
+  padding: 0 15px 20px 15px;
   margin-bottom: 20px;
   margin-left: 4px;
   border-radius: 12px;
   box-shadow:
-    0 0 6px #bbbbbb,
-    0 0 8px #dddddd;
+  0 0 6px #bbbbbb,
+  0 0 8px #dddddd;
+  position: sticky;
+  top: 110px;
 }
 
-.cont h3 {
+.sidebar h3 {
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -263,4 +262,46 @@
 
 .titlecategory:first-child {
   margin-top: 10px;
+}
+
+@media (max-height: 840px) {
+  .wrapper {
+    direction: rtl;
+    margin-bottom: 45px;
+  }
+
+  .sidebar {
+    overflow-y: auto;
+    height: 600px;
+    direction: rtl;
+  }
+  
+  .sidebar div {
+    direction: ltr;
+    margin-bottom: 20px;
+  }
+
+  .sidebar div:first-child,
+  .sidebar div:last-child {
+    margin-bottom: 0;
+  }
+
+  .sidebar h3 {
+    direction: ltr;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #1f35c886, #081d3f7d);
+  }
 }
