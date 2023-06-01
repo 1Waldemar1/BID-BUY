@@ -89,7 +89,7 @@
   }
 }
 
-@media (max-width: 727px) {
+@media (max-width: 737px) {
   .mobile {
     padding: 0 15px;
     margin: 0;
@@ -100,7 +100,7 @@
     padding: 12px 0 20px 0;
 
   }
-  
+
   .image {
     margin-left: 0px;
     width: 230px;

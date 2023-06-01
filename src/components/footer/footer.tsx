@@ -40,7 +40,7 @@ export const Footer = () => {
               <p>Войти</p>
             </li>
           </Link>
-          <Link to={"/"}>
+          <Link to={"order"}>
             <li className={style.item}>
               <FontAwesomeIcon className={style.icon} icon={faCartPlus} />
               <p>Корзина</p>
