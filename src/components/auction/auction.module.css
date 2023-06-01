@@ -23,23 +23,25 @@
 }
 
 .photo {
-  display: flex;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .photo img {
- max-width: 180px;
-  max-height: 210px;
+  width: 150px;
+  height: 180px;
 }
 
-.info {
+.card .info {
   display: flex;
+  width: 100%;
+  min-width: 580px;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  max-width: 850px;
+  min-width: calc(100% - 0px);
+  max-width: calc(100% - 0px);
   border: 1px solid #ffff;
   align-items: center;
   text-align: left;
@@ -70,13 +72,13 @@
 }
 
 .name {
-  font-size: 20.5px;
+  font-size: 19px;
   font-weight: 600;
   max-height: 95px;
 }
 
 .price {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
   margin-top: 15px;
 }
@@ -86,7 +88,7 @@
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .detail {
@@ -150,10 +152,14 @@
   display: flex;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 350px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
   padding: 0 15px 20px 15px;
   margin-bottom: 20px;
   margin-left: 4px;
@@ -205,7 +211,6 @@
 
 .checkbox__label {
   padding-left: 25px;
-
   font-size: 1rem;
   color: #444;
   cursor: pointer;
@@ -216,16 +221,13 @@
   display: block;
   width: 16px;
   height: 16px;
-
   border: 1px solid #ccc;
   background-color: #fff;
   border-radius: 3px;
-
   position: absolute;
   top: 2px;
   left: 0;
   z-index: 1;
-
   transition: background .1s linear, border .1s linear;
 }
 
@@ -265,6 +267,10 @@
 
 .titlecategory:first-child {
   margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  
 }
 
 @media (max-height: 840px) {
