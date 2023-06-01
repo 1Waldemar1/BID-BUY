@@ -90,7 +90,7 @@ export const Auction = () => {
   return (
     <div>
       <div className={style.title}>
-        <h2>Лоты</h2>
+        <span>Лоты</span>
       </div>
       <div className={style.contant}>
         <Messenger />

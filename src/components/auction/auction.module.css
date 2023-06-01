@@ -14,9 +14,12 @@
 
 .title {
   display: flex;
-  margin-top: 80px;
-  margin-left: 4px;
   flex-direction: column;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 4px;
+  color: rgb(21, 21, 40);
+  margin-top: 80px;
 }
 
 .photo {
