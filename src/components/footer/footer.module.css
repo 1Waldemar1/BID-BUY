@@ -9,6 +9,10 @@
   color: white;
 }
 
+.logo {
+  padding: 0 15px;
+}
+
 .logo img {
   width: 100%;
   max-width: 350px;
@@ -54,5 +58,16 @@
 
   .colorfooter {
     padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 737px) {
+  .colorfooter p {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 280px;
   }
 }

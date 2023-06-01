@@ -94,6 +94,33 @@
   .photo {
     margin-left: 0;
   }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .name {
+    font-size: 17px;
+  }
+
+  .photo img {
+  width: 140px;
+  height: 170px;
+  }
+
+  .price {
+    font-size: 21px;
+  }
+
+  .card_add {
+    width: 38px;
+    height: 38px;
+    margin-right: 0;
+  }
+
+  .icon {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 993px) {

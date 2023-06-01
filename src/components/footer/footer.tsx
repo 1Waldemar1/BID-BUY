@@ -19,7 +19,7 @@ export const Footer = () => {
           fired.
         </p>
       </div>
-      © Web development 2023
+      <p>© Web development 2023</p>
       <div className={style.mobile}>
         <ul className={style.list}>
           <Link to={"/"}>
