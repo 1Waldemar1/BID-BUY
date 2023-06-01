@@ -83,7 +83,7 @@ export const HomeProducts = () => {
     <div>
       <div className={style.wrapper}>
         <div className={style.title}>
-          <h2>Товары</h2>
+          <p>Товары</p>
         </div>
         <Messenger />
         <div className={style.contant}>

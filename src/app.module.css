@@ -10,8 +10,9 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 737px) {
   .app {
     max-width: none;
+    padding: 0 15px;
   }
 }
