@@ -13,7 +13,9 @@ export const Footer = () => {
   return (
     <div className={style.colorfooter}>
       <div className={style.logo}>
-        <img src={logo} alt="" />
+        <Link to={"/"}>
+          <img src={logo} alt="" />
+        </Link>
         <p>
           Don't worry if something doesn't work. If everything worked, you'd be
           fired.

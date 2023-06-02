@@ -85,7 +85,6 @@ export const HomeProducts = () => {
         <div className={style.title}>
           <span>Товары</span>
         </div>
-        <Messenger />
         <div className={style.contant}>
           {products.map((product) => (
             <div className={style.product} key={product.id}>
@@ -113,6 +112,7 @@ export const HomeProducts = () => {
           ))}
         </div>
       </div>
+      <Messenger />
     </div>
   );
 };
