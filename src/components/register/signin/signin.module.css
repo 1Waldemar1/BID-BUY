@@ -1,17 +1,10 @@
 .contener {
   margin: 70px auto;
-}
-
-.field input {
-  height: 45px;
-  width: 100%;
-  max-width: 390px;
-  font-size: 14px;
-  line-height: 16px;
-  border: 2px solid #E9F2FF;
-  border-radius: 5px;
-  padding-left: 25px;
-  color: #3B5983;
+  max-width: 415px;
+  background-color: #ffff;
+  box-shadow: 0 6px 50px rgba(217, 229, 255, 0.7);
+  border-radius: 20px;
+  padding: 38px 30px;
 }
 
 .title {
@@ -22,16 +15,24 @@
   margin-bottom: 38px;
 }
 
-.contener {
-  max-width: 415px;
-  background-color: #ffff;
-  box-shadow: 0 6px 50px rgba(217, 229, 255, 0.7);
-  border-radius: 20px;
-  padding: 38px 30px;
+.fields {
+  padding-right: 25px;
 }
 
 .field {
   margin-bottom: 13px;
+  max-width: 390px;
+}
+
+.inp {
+  height: 45px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  border: 2px solid #E9F2FF;
+  border-radius: 5px;
+  padding-left: 25px;
+  color: #3B5983;
 }
 
 .btns {

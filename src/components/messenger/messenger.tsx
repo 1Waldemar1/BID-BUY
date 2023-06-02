@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClose,
   faMessage,
+  faPaperPlane,
   faUserSecret,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -40,9 +41,19 @@ export const Messenger = () => {
                 />
                 <span>Здравствуйте!👋 У вас появился вопрос?</span>
               </div>
-              <div className={style.inp}>
-                <input type="text" placeholder="Введите сообщение..." />
-              </div>
+              <form className={style.input}>
+                <input
+                  className={style.inp}
+                  type="search"
+                  placeholder="Введите сообщение..."
+                />
+                <button className={style.submit} type="submit">
+                  <FontAwesomeIcon
+                    className={style.serch__icon}
+                    icon={faPaperPlane}
+                  />
+                </button>
+              </form>
             </div>
           </Dialog.Panel>
         </div>

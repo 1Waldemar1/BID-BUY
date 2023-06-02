@@ -8,15 +8,15 @@ export const SigIn = () => {
         <h1 className={style.title}>Вход</h1>
         <div className={style.fields}>
           <div className={style.field}>
-            <input type="text" placeholder="Номер телефона" />
+            <input className={style.inp} type="text" placeholder="Номер телефона" />
           </div>
           <div className={style.field}>
-            <input type="password" placeholder="Пароль" />
+            <input className={style.inp} type="password" placeholder="Пароль" />
           </div>
         </div>
         <div className={style.btns}>
           <button className={style.btn}>Войти</button>
-          <div>Не зарегестрированы?</div>
+          <span>Не зарегестрированы?</span>
           <Link to={"/signup"} className={style.btn_up}>
             <button>Зарегистрироваться</button>
           </Link>

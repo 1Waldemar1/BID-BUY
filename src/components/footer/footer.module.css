@@ -8,3 +8,66 @@
   text-align: center;
   color: white;
 }
+
+.logo {
+  padding: 0 15px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.mobile {
+  background-color: rgb(49, 57, 77);
+  width: 100vw;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  box-shadow:
+    0 0 8px #202046,
+    0 0 10px #353f75;
+  z-index: 1;
+}
+
+.list {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  height: 40px;
+}
+
+.item p {
+  color: #ffff;
+  font-size: 12px;
+}
+
+.icon {
+  color: #ffff;
+  font-size: 18px;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 992px) {
+  .mobile {
+    display: block;
+  }
+
+  .colorfooter {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 737px) {
+  .colorfooter p {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
