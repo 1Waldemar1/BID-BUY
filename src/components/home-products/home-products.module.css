@@ -15,15 +15,15 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 600;
-  color: #151528;
+  color: #444;
 }
 
 .photo {
-  margin-left: 15px;
-}
-
-.photo img {
-  width: 150px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 180px;
   height: 180px;
 }
 
@@ -95,7 +95,8 @@
 
 @media (max-width: 1200px) {
   .photo {
-    margin-left: 0;
+    width: 170px;
+    height: 170px;
   }
 
   .title {
@@ -104,11 +105,6 @@
 
   .name {
     font-size: 17px;
-  }
-
-  .photo img {
-    width: 140px;
-    height: 170px;
   }
 
   .price {
@@ -141,8 +137,8 @@
     font-size: 16px;
   }
 
-  .photo img {
-    width: 130px;
+  .photo {
+    width: 160px;
     height: 160px;
   }
 
@@ -171,8 +167,8 @@
     height: 72px;
   }
 
-  .photo img {
-    width: 104px;
+  .photo {
+    width: 128px;
     height: 128px;
   }
 
@@ -209,11 +205,6 @@
   .name {
     font-size: 13px;
     height: 72px;
-  }
-
-  .photo img {
-    width: 104px;
-    height: 128px;
   }
 
   .price {
