@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Messenger } from "../messenger/messenger";
 import style from "./auction.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 export const Auction = () => {
   const [products, setProducts] = useState([
@@ -91,6 +93,10 @@ export const Auction = () => {
     <div className={style.container}>
       <div className={style.title}>
         <span>Лоты</span>
+      </div>
+      <div className={style.mobile}>
+        <FontAwesomeIcon icon={faFilter} />
+        <span>Фильтры</span>
       </div>
       <div className={style.main}>
         <div className={style.catalog}>
