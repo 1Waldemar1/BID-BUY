@@ -26,6 +26,7 @@
 .field {
   margin-bottom: 13px;
   max-width: 390px;
+
 }
 
 .inp {
@@ -74,13 +75,9 @@
   align-items: center;
   text-decoration: none;
   margin: 25px 0 15px 0;
-  font-size: 15px;
-  line-height: 16px;
-  height: 35px;
   width: 100%;
   max-width: 390px;
   text-align: center;
-  line-height: 45px;
   border-radius: 5px;
 }
 
@@ -104,4 +101,90 @@
 .btn_up a {
   color: #ffff;
   text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .contener {
+    max-width: 374px;
+    max-height: 374px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .inp {
+    height: 41px;
+    font-size: 13px;
+  }
+
+  .btn {
+    margin: 32px 0 23px 0;
+    font-size: 14px;
+    height: 32px;
+    max-width: 351px;
+    line-height: 41px;
+  }
+
+  .btns span {
+    font-size: 15px;
+  }
+
+  .btn_up {
+    margin: 23px 0 14px 0;
+    max-width: 351px;
+  }
+
+  .btn_up button {
+    font-size: 14px;
+    height: 32px;
+  }
+
+  .btn_up button:hover {
+    font-size: 14px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 737px) {
+  .contener {
+    max-width: 332px;
+    max-height: 332px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .inp {
+    height: 36px;
+    font-size: 11px;
+  }
+
+  .btn {
+    margin: 28px 0 20px 0;
+    font-size: 12px;
+    height: 28px;
+    max-width: 312px;
+    line-height: 36px;
+  }
+
+  .btns span {
+    font-size: 13px;
+  }
+
+  .btn_up {
+    margin: 20px 0 12px 0;
+    max-width: 312px;
+  }
+
+  .btn_up button {
+    font-size: 12px;
+    height: 28px;
+  }
+
+  .btn_up button:hover {
+    font-size: 12px;
+    height: 28px;
+  }
 }
